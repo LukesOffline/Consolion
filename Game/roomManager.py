@@ -1,6 +1,8 @@
 import sys
 import random
 
+from monster import Monster
+
 
 class Room:
     def __init__(self):
@@ -11,7 +13,7 @@ class Room:
             rubies_found = random.randint(10, 50)
             print(f"You find {rubies_found} rubies!")
         else:
-            print("You find a zombie!")
+            Monster("Zombie")
 
         cont_input = input("Type anything to continue, type end to exit.")
         if cont_input == "end":
