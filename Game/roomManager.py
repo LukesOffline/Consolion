@@ -1,7 +1,7 @@
 import sys
 import random
 
-from monster import Monster
+from Game.monster import Monster
 
 
 class Room:
